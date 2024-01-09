@@ -40,10 +40,13 @@ ol {
 
 .content {
   display: flex;
+  position: relative;
   flex-direction: row;
   align-items: flex-end;
   gap: 30px;
   /* padding: 133px 30px; */
+  /* margin: auto; */
+  top: 25%;
 }
 
 .result {
