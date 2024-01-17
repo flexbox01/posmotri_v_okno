@@ -44,8 +44,6 @@ ol {
   flex-direction: row;
   align-items: flex-end;
   gap: 30px;
-  /* padding: 133px 30px; */
-  /* margin: auto; */
   top: 25%;
 }
 
@@ -66,7 +64,8 @@ ol {
 }
 
 .result__video {
-  width: 100%
+  width: 100%;
+  object-fit: cover;
 }
 
 .search-form {
@@ -148,8 +147,9 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
-  padding: 0.6px 1px;
+  /* padding: 0.6px 1px; */
   outline: 1px solid #FFF;
+  outline-offset: 1px;
 }
 
 .visually-hidden {
@@ -223,7 +223,6 @@ ol {
 }
 
 input[type="checkbox"]:checked ~ .search-form__pseudo-checkbox {
-  padding: 2px;
   background-color: #fff;
   background-clip: content-box;
   transition-duration: 0.3s;
